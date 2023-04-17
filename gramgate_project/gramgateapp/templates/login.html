@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GramGate.Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 col-lg-3"></div>
+
+            <div class="col-xs-3 col-lg-3">
+
+                <img src="{% static 'images/phone2.png'  %}" class="phone2">
+
+                <img src="{% static 'images/phone.png' %}" class="phone">
+                
+                <div class="slide">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="{% static 'images/screenshot1.png' %}" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{% static 'images/screenshot2.png' %}" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="{% static 'images/screenshot3.png' %}" class="d-block w-100" alt="...">
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="{% static 'images/screenshot4.png' %}" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-4 col-lg-4">
+                <form method="post">
+                    {% csrf_token %}
+                    <img src="{% static 'images/logo.png' %}" class="logo">
+
+                    <input class="text-box" type="email" name="email" placeholder="Email address">
+
+                    <input class="text-box" type="password" name="password" placeholder="Password">
+
+                    <button class="btn btn-info" type="submit">Log in</button>
+
+                    <a href="" class="forget">Forgotten your password?</a>
+                </form>
+
+                <div class="container">
+                    <label>Don't have an account? </label> <a href="{% url 'signup' %}" class="link">Sign up</a>
+                </div>
+            </div>
+
+            <div class="col-xs-2 col-lg-2"></div><br>
+
+            
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

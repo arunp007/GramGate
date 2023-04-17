@@ -1,0 +1,111 @@
+.logo{
+    width: 150px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.navigation{
+    border-right: 1px solid lightgray;
+    height: 5000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-light{
+    background-color: #ffffff;
+    border: none;
+    width: 200px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-light:hover{
+    background-color: #f1f1f1;
+}
+
+.btn-light.active{
+    background-color: #ffffff !important;
+    font-weight: bolder;
+}
+
+.icons{
+    width: 25px;
+    margin-right: 10px;
+    margin-left: -50px;
+}
+
+.icons:hover{
+    zoom: 85%;
+}
+
+.image{
+    width: 150px;
+    margin-top: -30px;
+}
+
+.message{
+    width: 30px;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+
+.notification{
+    width: 30px;
+    margin-top: -40px;
+    margin-left: 950px;
+}
+
+.profile_pic{
+    width: 55px;
+    height: 55px;
+    border-radius: 200px;
+    border: 2px solid lightcoral;
+    margin-right: 20px;
+}
+
+.fullname{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.underline{
+    margin-top: 10px;
+}
+
+.post_image{
+    width: 600px;
+    height: 300px;
+}
+
+.post_description{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.fa-heart{
+    font-size: 30px;
+    margin-right: 20px;
+    border: none;
+    background-color: #fff;
+}
+
+.fa-heart:hover{
+    color: red;
+}
+
+.fa-comment{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.fa-share{
+    font-size: 30px;
+    margin-right: 20px;
+}
